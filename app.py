@@ -11,7 +11,8 @@ from scipy import spatial
 
 app = Flask(__name__)
 
-vocab = gensim.models.KeyedVectors.load_word2vec_format("static/models/sgns.merge.word.bz2", encoding='utf-8')
+# vocab = gensim.models.KeyedVectors.load_word2vec_format("static/models/sgns.merge.word.bz2", encoding='utf-8')
+vocab = gensim.models.KeyedVectors.load_word2vec_format("static/models/sgns.sikuquanshu.word.bz2", encoding='utf-8')
 
 
 def word_embedding(word: str) -> np.ndarray:
